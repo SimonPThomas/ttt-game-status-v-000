@@ -65,7 +65,7 @@ def over?(board)
   if won?(board) || full?(board) || draw?(board)
     return true
   else return false
-   end 
+   end
 
 def winner(board)
   WIN_COMBINATIONS.each do |combo|
@@ -85,4 +85,5 @@ def winner(board)
     return nil
     end
   end
+end
 end
