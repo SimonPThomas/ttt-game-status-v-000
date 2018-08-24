@@ -67,16 +67,16 @@ def winner(board)
     position = combo[0] #postion = 3
     position_2 = combo[1] #postion = 4
     position_3 = combo[2] #postion = 5
-  
+
     cell = board[position] # "X" || "O"
     cell_2 = board[position_2]
     cell_3 = board[position_3]
-  
+
     if cell == cell_2 && cell_2 == cell_3 && position_taken?(board, position)
   # if won?(board) == true
 return "#{cell}"
+end
 if draw?(board) == true
   return nil
-end
 end
 end
