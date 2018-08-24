@@ -48,7 +48,7 @@ def draw? (board)
      cell_2 = board[position_2]
      cell_3 = board[position_3]
 
-     cell == cell_2 == cell_3 && position_taken?(board, position)
+     cell == cell_2 && cell_2 == cell_3 && position_taken?(board, position)
   return false
   if board.any? { |empty| empty == " " }
   return false
