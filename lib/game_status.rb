@@ -37,8 +37,8 @@ def full? (board)
 end
 
 def draw? (board)
-  board.any? { |empty| empty != " " }
+  if board.any? { |empty| empty != " " }
    true
- else
-   false
+ else true
+   
 end
