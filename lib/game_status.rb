@@ -37,16 +37,13 @@ def full? (board)
 end
 
 def draw? (board)
-
-
   if  board.any? { |empty| empty != " " } && cell == cell_2 && cell_2 == cell_3 && position_taken?(board, position)
   return false
-end
+  end
   if board.any? { |empty| empty == " " }
   return false
   end
   if board.any? { |empty| empty != " " }
-   return true
-end
-end
+  return true
+  end
 end
