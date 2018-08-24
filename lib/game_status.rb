@@ -38,7 +38,19 @@ end
 
 def draw? (board)
   if board.any? { |empty| empty != " " }
-   true
- else false
- end
+   return true
+  if  WIN_COMBINATIONS.each do |combo| # combo =[3, 4, 5]
+     position = combo[0] #postion = 3
+     position_2 = combo[1] #postion = 4
+     position_3 = combo[2] #postion = 5
+
+     cell = board[position] # "X" || "O"
+     cell_2 = board[position_2]
+     cell_3 = board[position_3]
+
+     cell == cell_2 == cell_3 && position_taken?(board, position)
+  return false
+  if board.any? { |empty| empty == " " }
+  return false
+  end
 end
