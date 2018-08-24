@@ -39,6 +39,6 @@ end
 def draw? (board)
   board.all? { |empty| empty != " " }
    true
- end
+ 
 
 end
