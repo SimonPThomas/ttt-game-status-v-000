@@ -53,7 +53,7 @@ def over?(board)
   if draw?(board) == true
     return true
     end
-  if won?(board) == true
+  if won?(board) == combo
     return true
     end
 end
