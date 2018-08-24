@@ -38,7 +38,7 @@ end
 
 def draw? (board)
   board.all? { |empty| }
- if empty != " " && index != board.any?{ |combo| }
+ if empty != " " 
    true
  end
 
