@@ -50,13 +50,14 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board) == true
-    return true
-    end
-    if  won?(board) == true
+
+  if  won?(board) == true
     return true
   end
   if board.any? { |empty| empty != " " } && won?(board) == false
     return false
+  end
+  if draw?(board) == true
+    return true
   end
 end
