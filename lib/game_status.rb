@@ -37,7 +37,7 @@ def full? (board)
 end
 
 def draw?(board)
-  
+
   if  won?(board) == true
   return false
   end
@@ -47,7 +47,6 @@ def draw?(board)
   if board.any? { |empty| empty != " " }
   return true
   end
-end
 end
 
 def over?(board)
