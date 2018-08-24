@@ -49,22 +49,22 @@ def draw?(board)
   end
 end
 
-# def over?(board)
-#   if draw?(board) == true
-#     return true
-#   end
-#   if won?(board) == true
-#     return true
-#   end
-# else return false
-# end
-
 def over?(board)
-  if won?(board) || draw?(board)
+  if draw?(board) == true
     return true
-  else return false
-   end
- end
+  end
+  if won?(board) == true
+    return true
+  end
+else return false
+end
+#
+# def over?(board)
+#   if won?(board) || draw?(board)
+#     return true
+#   else return false
+#    end
+#  end
 
 def winner(board)
   WIN_COMBINATIONS.each do |combo|
