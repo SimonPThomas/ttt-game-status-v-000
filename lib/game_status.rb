@@ -37,9 +37,7 @@ def full? (board)
 end
 
 def draw? (board)
-  if board.any? { |empty| empty != " " }
-   return true
-end
+
  WIN_COMBINATIONS.each do |combo| # combo =[3, 4, 5]
      position = combo[0] #postion = 3
      position_2 = combo[1] #postion = 4
@@ -55,5 +53,8 @@ end
   if board.any? { |empty| empty == " " }
   return false
   end
+  if board.any? { |empty| empty != " " }
+   return true
+end
 end
 end
