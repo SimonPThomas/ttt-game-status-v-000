@@ -50,25 +50,24 @@ def draw?(board)
 end
 
 def over?(board)
-
   if draw?(board) == true
     return true
   end
   if won?(board) == true
     return true
   end
-  if board.any? { |empty| empty != " " } && won?(board) == false
-    return false
-  end
+  # if board.any? { |empty| empty != " " } && won?(board) == false
+  #   return false
+  # end
 end
 
 def winner(board)
-  WIN_COMBINATIONS.each do |combo| # combo =[3, 4, 5]
-    position = combo[0] #postion = 3
-    position_2 = combo[1] #postion = 4
-    position_3 = combo[2] #postion = 5
+  WIN_COMBINATIONS.each do |combo| 
+    position = combo[0] 
+    position_2 = combo[1] 
+    position_3 = combo[2] 
 
-    cell = board[position] # "X" || "O"
+    cell = board[position] 
     cell_2 = board[position_2]
     cell_3 = board[position_3]
 
