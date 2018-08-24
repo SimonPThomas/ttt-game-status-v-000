@@ -77,7 +77,7 @@ def winner(board)
     return "#{cell}"
     end
     if full?(board) == true && won?(board) == false
-    return "nil"
+    return nil
     end
   end
 end
