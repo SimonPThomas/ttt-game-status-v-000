@@ -64,6 +64,6 @@ end
 
 def winner(board)
 if won?(board) == true
-puts"  #{board[position]}"
+puts"  #{cell}"
 end
 end
