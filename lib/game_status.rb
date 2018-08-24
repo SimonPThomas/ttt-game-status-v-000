@@ -37,15 +37,17 @@ def full? (board)
 end
 
 def draw? (board)
-  WIN_COMBINATIONS.each do |combo| # combo =[3, 4, 5]
-      position = combo[0] #postion = 3
-      position_2 = combo[1] #postion = 4
-      position_3 = combo[2] #postion = 5
+  WIN_COMBINATIONS.each do |combo| 
+      position = combo[0] 
+      position_2 = combo[1] 
+      position_3 = combo[2] 
 
-      cell = board[position] # "X" || "O"
+      cell = board[position] 
       cell_2 = board[position_2]
       cell_3 = board[position_3]
-  if  board.any? { |empty| empty != " " } && cell == cell_2 && cell_2 == cell_3 && position_taken?(board, position)
+      
+    board.any? { |empty| }
+    if empty != " "  && cell == cell_2 && cell_2 == cell_3 && position_taken?(board, position)
   return false
   end
   if board.any? { |empty| empty == " " }
