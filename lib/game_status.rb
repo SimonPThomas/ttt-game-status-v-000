@@ -57,3 +57,9 @@ def draw? (board)
   end
 end
 end
+
+def over? (board)
+
+
+
+end
