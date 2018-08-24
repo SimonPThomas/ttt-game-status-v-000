@@ -37,7 +37,6 @@ def full? (board)
 end
 
 def draw? (board)
-
  WIN_COMBINATIONS.each do |combo| # combo =[3, 4, 5]
      position = combo[0] #postion = 3
      position_2 = combo[1] #postion = 4
