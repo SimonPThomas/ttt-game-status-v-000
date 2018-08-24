@@ -44,7 +44,7 @@ def draw?(board)
   if board.any? { |empty| empty == " " }
   return false
   end
-  if board.any? { |empty| empty != " " }
+  if board.any? { |empty| empty != " " } && won?(board) == false 
   return true
   end
 end
