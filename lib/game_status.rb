@@ -61,3 +61,10 @@ def over?(board)
     return false
   end
 end
+
+winner(board)
+if won?(board) == true 
+puts"  #{board[position]}"
+end
+end
+  
