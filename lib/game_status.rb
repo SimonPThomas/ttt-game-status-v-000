@@ -62,9 +62,8 @@ def over?(board)
   end
 end
 
-winner(board)
-if won?(board) == true 
+def winner(board)
+if won?(board) == true
 puts"  #{board[position]}"
 end
 end
-  
