@@ -59,10 +59,10 @@ end
 end
 
 def over? (board)
-  if draw? == true
+  if draw?(board) == true
     return  true
     end
-  if won? == true
+  if won?(board) == true
     return  true
     end
   else false
