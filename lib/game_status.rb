@@ -49,17 +49,17 @@ def draw?(board)
   end
 end
 
-# def over?(board)
-  if draw?(board) == true
-    return true
-  end
-  if won?(board) == true
-    return true
-  end
-  # if board.any? { |empty| empty != " " } && won?(board) == false
-  #   return false
-  # end
-end
+# # def over?(board)
+#   if draw?(board) == true
+#     return true
+#   end
+#   if won?(board) == true
+#     return true
+#   end
+#   # if board.any? { |empty| empty != " " } && won?(board) == false
+#   #   return false
+#   # end
+# end
 
 def over?(board)
   if won?(board) || full?(board) || draw?(board)
