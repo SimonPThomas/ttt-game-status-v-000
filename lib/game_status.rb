@@ -49,7 +49,7 @@ def draw?(board)
   end
 end
 
-# def over?(board)
+def over?(board)
   if draw?(board) == true
     return true
   end
