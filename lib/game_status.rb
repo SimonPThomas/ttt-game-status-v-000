@@ -40,5 +40,5 @@ def draw? (board)
   if board.any? { |empty| empty != " " }
    true
  else true
-   
+ end
 end
