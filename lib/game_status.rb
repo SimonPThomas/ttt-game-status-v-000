@@ -49,7 +49,7 @@ def draw?(board)
   end
 end
 
-def over?(board)
+# def over?(board)
   if draw?(board) == true
     return true
   end
@@ -61,13 +61,15 @@ def over?(board)
   # end
 end
 
-def winner(board)
-  WIN_COMBINATIONS.each do |combo| 
-    position = combo[0] 
-    position_2 = combo[1] 
-    position_3 = combo[2] 
+def over?(board) if won?(board) || full?(board) || draw?(board) return true else return false end end
 
-    cell = board[position] 
+def winner(board)
+  WIN_COMBINATIONS.each do |combo|
+    position = combo[0]
+    position_2 = combo[1]
+    position_3 = combo[2]
+
+    cell = board[position]
     cell_2 = board[position_2]
     cell_3 = board[position_3]
 
