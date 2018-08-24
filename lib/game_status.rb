@@ -60,5 +60,4 @@ def over?(board)
   if board.any? { |empty| empty != " " } && won?(board) == false
     return false
   end
-
 end
