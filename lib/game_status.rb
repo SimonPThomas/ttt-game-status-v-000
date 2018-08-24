@@ -56,6 +56,7 @@ end
   if won?(board) == true
     return true
   end
+end
 # else return false
 # end
 #
