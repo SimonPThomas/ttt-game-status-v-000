@@ -71,13 +71,12 @@ def winner(board)
     cell = board[position] # "X" || "O"
     cell_2 = board[position_2]
     cell_3 = board[position_3]
-
+end
     if cell == cell_2 && cell_2 == cell_3 && position_taken?(board, position)
   # if won?(board) == true
 return "#{cell}"
 end
 if full?(board) == true
-  return nil
-end
+return nil
 end
 end
