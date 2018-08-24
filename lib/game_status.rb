@@ -67,4 +67,3 @@ def over? (board)
     end
   else false
     end
-
