@@ -37,9 +37,9 @@ def full? (board)
 end
 
 def draw? (board)
-  board.all? { |empty| empty != " "}
-# if empty != " " && index != board.any?{ |combo| }
-#   true
-# end
+  board.all? { |empty| }
+ if empty != " " && index != board.any?{ |combo| }
+   true
+ end
 
 end
