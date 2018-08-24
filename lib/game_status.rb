@@ -82,6 +82,7 @@ def winner(board)
     # if won?(board) == true
     return "#{cell}"
     end
+  end
   else
     return nil
     end
