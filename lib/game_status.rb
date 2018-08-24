@@ -53,7 +53,10 @@ def over?(board)
   if draw?(board) == true
     return true
     end
-  if won?(board) == combo
+  if won?(board) == true
     return true
     end
+    if board.any? { |empty| empty != " " } && won?(board) == false
+    return false
+  end
 end
